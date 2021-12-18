@@ -26,6 +26,7 @@ class Tasck20 {
     }
 }
 
+/*
 class Point {
     private int x;
     private int y;
@@ -63,3 +64,6 @@ class Point {
         this.z = z;
     }
 }
+
+
+ */
