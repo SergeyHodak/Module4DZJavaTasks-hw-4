@@ -14,7 +14,7 @@ class Tasck09 {
     }
 
     public static void main(String[] args) {
-        AdvancedXFuelEngine engine = new AdvancedXFuelEngine();
+        AdvancedXFuelEngine09 engine = new AdvancedXFuelEngine09();
         engine.setPower(1000);
         engine.setSerialNumber("SN504030");
         engine.printInfo(); //Serial number is SN504030, power is 1000
@@ -30,7 +30,7 @@ class Tasck09 {
     мощность двигателя в формате "Serial number is <SERIAL NUMBER>, power is <POWER>".
  */
 
-class XFuelEngine extends Tasck09 {
+class XFuelEngine09 extends Tasck09 {
     protected String serialNumber; //Серийный номер
 
     @Override
@@ -44,7 +44,7 @@ class XFuelEngine extends Tasck09 {
 
 }
 
-class AdvancedXFuelEngine extends XFuelEngine {
+class AdvancedXFuelEngine09 extends XFuelEngine09 {
     public void printInfo() {
         System.out.println("Serial number is " + serialNumber + ", power is " + getPower());
     }

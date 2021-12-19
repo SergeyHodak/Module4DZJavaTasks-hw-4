@@ -10,9 +10,9 @@
 <rocketCount> - значение поля rocketCount.
  */
 
-class Tasck23 {
-    private String size;
-    private int rocketCount;
+class Tasck23 { //класс RocketLauncher
+    private String size; //размер ракет в этой установке
+    private int rocketCount; //количество ракет
 
     public String getSize() {
         return size;
@@ -36,9 +36,12 @@ class Tasck23 {
         launcher.setRocketCount(50);
 
         //Should be - Size is big, rocket count is 50
-        System.out.println(launcher);
+        System.out.println(launcher); // без переопределения метода туСтринг получим: Tasck23@58ceff1
     }
 
+    // переопределение метода toString()
     @Override
-    public String toString() {}
+    public String toString() {
+        return "Size is " + this.size + ", rocket count is " + this.rocketCount;
+    }
 }

@@ -30,7 +30,7 @@ class RegularPassenger extends Tasck12 {
     }
 }
 
-class VIPPassenger extends Tasck12 {
+class VIPPassenger12 extends Tasck12 {
     @Override
     public String getType() {
         return "VIP";
@@ -42,7 +42,7 @@ class VIPPassenger extends Tasck12 {
     }
 
     public static void main(String[] args) {
-        Tasck12 vip = new VIPPassenger();
+        Tasck12 vip = new VIPPassenger12();
         System.out.println(vip.getType());  //VIP
         System.out.println(vip.getTicketPrice()); //399
     }

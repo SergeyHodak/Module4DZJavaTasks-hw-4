@@ -32,14 +32,14 @@ class Tasck10 {
     }
 }
 
-class XFuelTanker extends Tasck10 {
+class XFuelTanker10 extends Tasck10 {
     @Override
     public String getFuelType() {
         return "XFuel"; // вид топлива = XFuel
     }
 }
 
-class MX200Tanker extends Tasck10 {
+class MX200Tanker10 extends Tasck10 {
     @Override
     public String getFuelType() {
         return "MX200"; // вид топлива = MX200
@@ -50,11 +50,11 @@ class MX200Tanker extends Tasck10 {
         tanker.setSerialNumber("SN504030");
         tanker.refuel(300); // Add 300 of A500, tanker serial number is SN504030
 
-        Tasck10 tanker1 = new XFuelTanker();
+        Tasck10 tanker1 = new XFuelTanker10();
         tanker1.setSerialNumber("SN504030");
         tanker1.refuel(300); // Add 300 of XFuel, tanker serial number is SN504030
 
-        Tasck10 tanker2 = new MX200Tanker();
+        Tasck10 tanker2 = new MX200Tanker10();
         tanker2.setSerialNumber("SN504030");
         tanker2.refuel(300); // Add 300 of MX200, tanker serial number is SN504030
     }

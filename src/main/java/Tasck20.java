@@ -6,17 +6,17 @@
 
 class Tasck20 {
     public static void main(String[] args) {
-        Point p1 = new Point();
+        Point20 p1 = new Point20();
         p1.setX(1);
         p1.setY(1);
         p1.setZ(1);
 
-        Point p2 = new Point();
+        Point20 p2 = new Point20();
         p2.setX(1);
         p2.setY(1);
         p2.setZ(1);
 
-        Point p3 = new Point();
+        Point20 p3 = new Point20();
         p3.setX(2);
         p3.setY(2);
         p3.setZ(3);
@@ -26,8 +26,8 @@ class Tasck20 {
     }
 }
 
-/*
-class Point {
+
+class Point20 {
     private int x;
     private int y;
     private int z;
@@ -36,7 +36,7 @@ class Point {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Point point = (Point) o;
+        Point20 point = (Point20) o;
         return x == point.x && y == point.y && z == point.z;
     }
 
@@ -64,6 +64,3 @@ class Point {
         this.z = z;
     }
 }
-
-
- */

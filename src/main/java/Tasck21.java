@@ -24,17 +24,17 @@ import java.util.Objects;
 
 class Tasck21 {
     public static void main(String[] args) {
-        Point p1 = new Point();
+        Point21 p1 = new Point21();
         p1.setX(1);
         p1.setY(1);
         p1.setZ(1);
 
-        Point p2 = new Point();
+        Point21 p2 = new Point21();
         p2.setX(1);
         p2.setY(1);
         p2.setZ(1);
 
-        Point p3 = new Point();
+        Point21 p3 = new Point21();
         p3.setX(2);
         p3.setY(2);
         p3.setZ(3);
@@ -46,8 +46,8 @@ class Tasck21 {
     }
 }
 
-/*
-class Point {
+
+class Point21 {
     private int x;
     private int y;
     private int z;
@@ -80,7 +80,7 @@ class Point {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Point point = (Point) o;
+        Point21 point = (Point21) o;
         return x == point.x &&
                 y == point.y &&
                 z == point.z;
@@ -92,5 +92,3 @@ class Point {
     }
 
 }
-
- */

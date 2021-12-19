@@ -17,8 +17,8 @@ class Tasck08 {
         Tasck08 basicEngine = new Tasck08();
         System.out.println(basicEngine.getFuelType()); //A500
 
-        //Tasck08 xFuelEngine = new XFuelEngine();
-        //System.out.println(xFuelEngine.getFuelType()); //XFuel
+        Tasck08 xFuelEngine = new XFuelEngine08();
+        System.out.println(xFuelEngine.getFuelType()); //XFuel
     }
 }
 
@@ -28,9 +28,9 @@ class Tasck08 {
  */
 
 
-//lass XFuelEngine extends Tasck08 {
-//    @Override
-//    public String getFuelType() {
-//        return "XFuel";
-//    }
-//}
+class XFuelEngine08 extends Tasck08 {
+    @Override
+    public String getFuelType() {
+        return "XFuel";
+    }
+}

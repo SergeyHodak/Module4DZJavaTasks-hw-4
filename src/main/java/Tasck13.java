@@ -4,29 +4,29 @@
  */
 
 class Tasck13 {
-    public int calculateTotalPrice(Spaceport spaceport, int passengerCount) {
+    public int calculateTotalPrice(Spaceport13 spaceport, int passengerCount) {
         return spaceport.calculateTotalPrice(passengerCount);
     }
 
     public static void main(String[] args) {
         Tasck13 calculator = new Tasck13();
 
-        int jupiterStarPrice = calculator.calculateTotalPrice(new JupiterStar(), 100);
+        int jupiterStarPrice = calculator.calculateTotalPrice(new JupiterStar13(), 100);
         System.out.println("JupiterStar price = " + jupiterStarPrice); //700
 
-        int mercuryBeatPrice = calculator.calculateTotalPrice(new MercuryBeat(), 100);
+        int mercuryBeatPrice = calculator.calculateTotalPrice(new MercuryBeat13(), 100);
         System.out.println("MercuryBeat price = " + mercuryBeatPrice); //1500
 
-        int sunHeavenPrice = calculator.calculateTotalPrice(new SunHeaven(), 100);
+        int sunHeavenPrice = calculator.calculateTotalPrice(new SunHeaven13(), 100);
         System.out.println("SunHeaven price = " + sunHeavenPrice); //2000
     }
 }
 
-abstract class Spaceport {
+abstract class Spaceport13 {
     public abstract int calculateTotalPrice(int passengerCount);
 }
 
-class JupiterStar extends Spaceport {
+class JupiterStar13 extends Spaceport13 {
     @Override
     public int calculateTotalPrice(int passengerCount) {
         /*
@@ -37,7 +37,7 @@ class JupiterStar extends Spaceport {
     }
 }
 
-class MercuryBeat extends Spaceport {
+class MercuryBeat13 extends Spaceport13 {
     @Override
     public int calculateTotalPrice(int passengerCount) {
         /*
@@ -48,7 +48,7 @@ class MercuryBeat extends Spaceport {
     }
 }
 
-class SunHeaven extends Spaceport {
+class SunHeaven13 extends Spaceport13 {
     @Override
     public int calculateTotalPrice(int passengerCount) {
         /*

@@ -7,12 +7,12 @@
 
 class Tasck19 {
     public static void main(String[] args) {
-        Point p1 = new Point();
+        Point19 p1 = new Point19();
         p1.setX(1);
         p1.setY(1);
         p1.setZ(1);
 
-        Point p2 = new Point();
+        Point19 p2 = new Point19();
         p2.setX(1);
         p2.setY(1);
         p2.setZ(1);
@@ -21,8 +21,7 @@ class Tasck19 {
     }
 }
 
-/*
-class Point {
+class Point19 {
     private int x;
     private int y;
     private int z;
@@ -51,4 +50,3 @@ class Point {
         return this.z;
     }
 }
-*/
